@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Minha cabeça vai explodir!</title>
+    <style>
+        body {
+            background: #222;
+            color: #fff;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .cabeca {
+            margin: 50px auto;
+            width: 150px;
+            height: 150px;
+            background: #f9c74f;
+            border-radius: 50%;
+            position: relative;
+            box-shadow: 0 0 40px #f9c74f;
+            animation: explodir 2s infinite alternate;
+        }
+        .explosao {
+            position: absolute;
+            top: -40px;
+            left: 25px;
+            width: 100px;
+            height: 60px;
+            background: radial-gradient(circle, #f94144 60%, transparent 100%);
+            border-radius: 50%;
+            opacity: 0.8;
+            animation: boom 0.5s infinite alternate;
+        }
+        @keyframes explodir {
+            0% { box-shadow: 0 0 40px #f9c74f; }
+            100% { box-shadow: 0 0 120px #f94144; }
+        }
+        @keyframes boom {
+            0% { transform: scale(1); opacity: 0.8; }
+            100% { transform: scale(1.3); opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Minha cabeça vai explodir!</h1>
+    <div class="cabeca">
+        <div class="explosao"></div>
+    </div>
+    <p>Quando vejo muito código pra estudar 😵‍💫💥</p>
+</body>
+</html>

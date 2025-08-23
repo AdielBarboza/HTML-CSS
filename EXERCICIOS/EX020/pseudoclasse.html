@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+          div {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            display: inline-block;
+            text-align: center;
+            
+            }
+            div > p {
+                display: none;}
+
+            div:hover >p    {
+            /* Quando o mouse passar por cima do div, o parágrafo será exibido */
+            animation:cubic-bezier(0.645, 0.045, 0.355, 1);
+                display: block;
+            color: red;
+            font-size: 20px;}
+
+            div:hover {
+                
+            background-color: rgb(241, 245, 18);}
+            div:active {
+            
+            /* Quando o div for clicado, a cor de fundo muda */
+            background-color: rgb(18, 241, 45);}
+    </style>
+</head>
+<body>
+    <div id="01">01
+        <p>Acertou !!</p> </div>
+    <div id="02">02 </div>
+    <div id="03">03 </div>
+</body>
+</html>

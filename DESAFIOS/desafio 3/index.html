@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>desafio imagem dinamica</title>
+</head>
+<body>
+    <h1>Transformando essa imagem em uma imagem dinamica, com o uso de html5</h1>
+    <p>aumente ou diminua o tamanho da imagem mudando o tamanho da tela do computador!</p>
+
+    <picture>
+        <source media="(max-width:988px )" srcset="imagens/img-783x515.jpg" type="image/jpg">
+        <source media="(max-width:1274px )" srcset="imagens/img-988x649.jpg" type="image/jpg">
+        <source media="(max-width:1572px )" srcset="imagens/img-1247x819.jpg" type="image/jpg">
+        <source media="(max-width:1983px )" srcset="imagens/img-1572x1033.jpg" type="image/jpg">
+        <source media="(max-width:2500px )" srcset="imagens/img-1983x1309.jpg" type="image/jpg">
+        <source media="(max-width:3151px )" srcset="imagens/img-2500x1650.jpg" type="image/jpg">
+        <source media="(max-width:3971px )" srcset="imagens/img-3151x2079.jpg" type="image/jpg">
+        <source media ="(max-width: 5000px )" srcset="imagens/img-3971x2611.jpg" type="image/jpg">
+        <img src="imagens/img-5000x3300.jpg" alt="Imagem Dinâmica"> 
+    </picture>
+</body>
+</html>
