@@ -21,21 +21,36 @@ table tr th{
      height: 20px;
     border: 1px solid black;
  }
+  .col1 {
+background-color: darkgray;
+}
+ .linha1{
+background-color: dimgray;}
+
 
     
     </style>
 </head>
 <body>
     <table>
+
+        <colgroup>
+        
+        <col class="col1"> 
+        <col class="col2">
+        <col class="col3">
+        
+        
+        </colgroup>
         <caption> BOLETIN ESCOLAR</caption>
         <thead>
-             <tr>
-                <th rowspan="2" colspan="3">Area</th>
+             <tr class="linha1">
+                <th rowspan="2" colspan="3" class="col1">Area</th>
                 <th rowspan="2" colspan="4">Diciplinas</th>
                 <th rowspan="1" colspan="4">Notas</th>
                 <th rowspan="2" colspan="3">Média</th>
              </tr>
-             <tr>
+             <tr class="linha1">
                 <th rowspan="1" colspan="2" >Nota 1</th>
                 <th rowspan="1" colspan="2">Nota 2</th>
                 
