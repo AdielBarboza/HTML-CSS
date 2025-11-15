@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario simples</title>
+    <style>
+        *{
+
+        font-family: Arial, Helvetica, sans-serif;
+    
+    }
+
+    input{
+    border: solid black;}
+
+    input:hover {
+    border: solid skyblue;
+    background-color: black;
+    color: white;
+
+    }
+    </style>
+</head>
+<body>
+
+    <h1>Meu Primeiro Formulario</h1>
+    <form  action="cadastro.php" method="post"  autocomplete="off">
+
+        <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome">
+        </p>
+
+        <p><label for="isobrenome">SobreNome:</label> <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+
+     <!-- 
+         esse escript faz com que apareca um texto dentro da box selecionada, nesse caso a box Nome  esse texto faz com que apareca "SEU NOME" escrito na box assim direcionando o CLiente a Saber que aquele Campo Vai o Nome dele ! pode ser auterado o texto e tambem o campo 
+        <script>
+        let t = nome, a = ['seu nome'], i = 0, j = 0, pause = false;
+
+        setInterval(() => {
+          if (pause) return;
+          t.placeholder = a[i].slice(0, ++j) + '_';
+
+          if (j > a[i].length) {
+            pause = true;
+
+            setTimeout(() => {
+               j = 0;
+               i = ++i % a.length;
+               pause = false; 
+            }, 80);
+                    
+        }
+    }, 150)
+    </script>
+-->
+   
+
+</body>
+</html>
