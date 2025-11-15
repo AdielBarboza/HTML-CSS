@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Formularios</title>
+</head>
+<body>
+    <h1>Teste de Formularios</h1>
+
+    <form action="cadastro.php">
+        <fieldset>
+            <legend>Cor</legend>
+            <input type="color" name="cor" id="icor">
+            <label for="icor">Escolha uma cor</label>
+
+        </fieldset>
+
+    <fieldset>
+        <legend>Satisfacao</legend>
+        <label for="isati">Seu nivel de Satisfacao</label>
+        <input type="range" name="sati" id="isati" min="1" max="5">
+
+    </fieldset>
+    <fieldset>
+        <legend>Enviar Imagens ou arquivos</legend>
+        <label for="ifile">sua foto  aqui </label>
+        <input type="file" name="ifile" id="ifile">
+    </fieldset>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Apagar">
+
+
+
+
+    </form>
+</body>
+</html>
